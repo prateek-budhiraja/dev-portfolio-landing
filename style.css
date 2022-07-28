@@ -1,4 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+:root {
+  --dark-black: #0D0D0D;
+  --black-1: #121a1e;
+  --black-2: #232324;
+  --white: #CAD5E2;
+  --red: #BF3325;
+}
+
 body {
-  background-color: #0D0D0D;
-  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--dark-black);
+  color: var(--white);
+}
+
+header {
+  min-height: 500px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+/* header nav img {
+  width: 100px;
+} */
+
+.nav-links span {
+  margin-right: 2em;
+  position: relative;
+}
+
+nav span>i {
+  position: absolute;
+  bottom: 5px;
+}
+
+.nav-links span {
+  cursor: pointer;
+}
+
+.nav-links span:hover {
+  color: var(--red);
+}
+
+header .intro {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+
+header .intro h2 {
+  color: var(--red);
+}
+
+header .intro h1 {
+  font-size: 4rem;
+  margin-top: -10px;
+}
+
+header .intro p {
+  margin-top: -30px;
+  width: 60%;
+}
+
+header .intro img {
+  width: 500px;
+}
+
+header .intro button {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.hero .bg-effect {
+  left: 0;
+  top: 596px;
+  position: absolute;
+  z-index: -1;
+  height: 800px;
+  width: 700px;
+  background-color: var(--black-1);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 60px 200px;
+  gap: 2em;
+}
+
+.skills .skill-box {
+  background-color: var(--black-2);
+  padding: 40px 50px;
+}
+
+.skills .skill-box:nth-child(2) {
+  background-color: var(--red);
+  padding: 40px 50px;
+}
+
+.skills .skill-box span {
+  color: var(--red)
+}
+
+.skills .skill-box:nth-child(2) span {
+  color: var(--white)
+}
+
+.skills .skill-box h2 {
+  font-size: 2rem;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 250px;
+}
+
+.experience-cards {
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2em;
+}
+
+.experience-cards h1 {
+  font-size: 3rem;
+  color: var(--red);
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.total-experience h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  color: var(--red);
+  margin-bottom: -10px;
+}
+
+.experience-cards .card {
+  background-color: var(--black-2);
+  padding: 20px 85px;
+}
+
+.projects {
+  margin: 120px 120px 70px 120px;
+  position: relative;
+}
+
+.projects h1 {
+  margin-bottom: 0px;
+}
+
+.projects button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 8px;
+  right: 66px;
+  padding: 12px 25px;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.project-cards {
+  margin: 40px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.project-cards .project-card .project-img {
+  text-align: center;
+  padding: 40px 0;
+  background-color: var(--black-2);
+}
+
+.project-cards .project-card {
+  margin: 2em;
+  /* width: 500px; */
+}
+
+.project-cards .project-card .project-img img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-cards .project-card h2 {
+  margin-bottom: 5px;
+}
+
+.project-cards .project-card span {
+  color: var(--red);
+  cursor: pointer;
+}
+
+.contact {
+  background-color: var(--black-2);
+  padding: 50px 100px;
+  margin: 50px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .text h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.contact .text {
+  width: 50%;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background-color: var(--red);
+  color: var(--white);
+  margin-right: 180px;
+  border: 0;
+  font-size: 1.2rem;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 40px;
+}
+
+footer nav span {
+  cursor: pointer;
+}
+
+footer nav span:hover {
+  color: var(--red);
+}
+
+footer .footer {
+  padding: 40px;
+  background-color: var(--black-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .footer>img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.socials img {
+  margin-right: 20px;
+  cursor: pointer;
 }
