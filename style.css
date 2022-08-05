@@ -265,3 +265,125 @@ footer .footer>img {
   margin-right: 20px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 850px) {
+  header {
+    min-height: 320px;
+  }
+
+  header .intro img {
+    display: none;
+  }
+
+  nav img {
+    width: 90px;
+  }
+
+  nav .nav-links {
+    display: none;
+  }
+
+  header nav {
+    padding: 20px;
+  }
+
+  header .intro {
+    padding: 0 20px;
+  }
+
+  header .intro h1 {
+    font-size: 3rem;
+    margin-top: 0px;
+  }
+
+  header .intro p {
+    margin-top: -10px;
+    width: 100%;
+  }
+
+  header .intro button {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .hero .bg-effect {
+    left: 0;
+    top: 460px;
+    height: 950px;
+    width: 100%;
+  }
+
+  .skills {
+    margin: 60px 10px;
+    gap: 2em;
+    display: block;
+  }
+
+  .skill-box {
+    display: block;
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .experience {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .experience-cards {
+    margin-left: 20px;
+    gap: 1em;
+  }
+
+  .experience-cards .card {
+    padding: 10px 25px;
+  }
+
+  .projects {
+    margin: 80px 20px;
+    position: relative;
+  }
+
+  .projects h1 {
+    font-size: 1.4rem;
+  }
+
+  .projects button {
+    font-size: 1rem;
+    position: static;
+    display: block;
+    margin-top: 15px;
+    padding: 6px 12px;
+  }
+
+  .project-cards {
+    margin: 0 -30px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 20px 30px;
+    margin: 30px 0px;
+  }
+
+  .contact .text h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact .text {
+    width: 80%;
+  }
+
+  .contact button {
+    padding: 8px 15px;
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+
+}
